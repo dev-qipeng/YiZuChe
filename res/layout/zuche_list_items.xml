@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/zuche_list_title" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_pic"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_pic"
+        android:text="校园山地自行车"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="40dp"
+        android:singleLine="true"
+        android:text="15639019102"
+        android:textSize="16sp" 
+        android:textColor="#000"  />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_alignBottom="@id/iv_pic"
+        android:singleLine="true"
+        android:text="2016-03-16 20：03"
+        android:textSize="16sp" 
+        android:textColor="@android:color/darker_gray"  />
+
+</RelativeLayout>
